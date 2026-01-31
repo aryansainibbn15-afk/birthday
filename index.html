@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Happy Birthday Legend 🎉</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600;800&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box;font-family:'Poppins',sans-serif}
+body{
+  background:linear-gradient(135deg,#1a1a1a,#000);
+  color:#fff;
+  text-align:center;
+  overflow-x:hidden;
+}
+header{
+  padding:60px 20px;
+}
+h1{
+  font-size:3rem;
+  animation:pop 1s ease-in-out infinite alternate;
+}
+@keyframes pop{
+  from{transform:scale(1)}
+  to{transform:scale(1.05)}
+}
+.photo{
+  margin:30px auto;
+  width:280px;
+  border-radius:20px;
+  overflow:hidden;
+  box-shadow:0 0 30px #ff4081;
+}
+.photo img{width:100%}
+
+.message{
+  margin:40px auto;
+  max-width:700px;
+  font-size:20px;
+  line-height:1.6;
+}
+
+.memes{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+  gap:20px;
+  padding:40px 10%;
+}
+.memes img{
+  width:100%;
+  border-radius:12px;
+}
+
+button{
+  margin-top:30px;
+  padding:14px 28px;
+  border:none;
+  border-radius:8px;
+  background:#ff4081;
+  color:#fff;
+  font-size:18px;
+  cursor:pointer;
+}
+
+.hidden{
+  display:none;
+  margin-top:30px;
+  font-size:24px;
+  color:#00e5ff;
+}
+
+footer{
+  margin-top:60px;
+  padding:20px;
+  color:#aaa;
+  font-size:14px;
+}
+</style>
+</head>
+<body>
+
+<header>
+  <h1>Happy Birthday You Legend 🎂🔥</h1>
+</header>
+
+<div class="photo">
+  <img src="friend.jpg" alt="Best Memory">
+</div>
+
+<div class="message">
+  Bro, another year older but still acting like a teenager 🤣  
+  May your day be full of cake, memes, and zero responsibilities.  
+  You are not getting older… just more expensive to maintain. 💸
+</div>
+
+<section class="memes">
+  <img src="https://i.imgflip.com/30b1gx.jpg" alt="">
+  <img src="https://i.imgflip.com/1bij.jpg" alt="">
+  <img src="https://i.imgflip.com/4t0m5.jpg" alt="">
+  <img src="https://i.imgflip.com/26am.jpg" alt="">
+</section>
+
+<button onclick="showWish()">Click for Secret Birthday Wish 🎁</button>
+
+<div id="secret" class="hidden">
+  You are my brother from another mother.  
+  Stay crazy, stay real, and never change. ❤️
+</div>
+
+<footer>
+  Made with memes and friendship 💯
+</footer>
+
+<script>
+function showWish(){
+  document.getElementById('secret').style.display='block';
+}
+</script>
+
+</body>
+</html>
